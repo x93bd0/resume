@@ -1,2 +1,2 @@
 # resume
-![](resume.jpg)
+![](resume.jpeg)
