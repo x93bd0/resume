@@ -1,0 +1,169 @@
+% Resume in Latex
+% Author  : Boris Daniel Martinez Millán
+% Github  : https://github.com/x93bd0/resume
+% Based on: https://github.com/albertolg101/resume
+% License : MIT
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{titlesec}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\title{CV}
+\author{Boris Martinez}
+\date{December 2025}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeTechnicalSkillItem}[4]{
+    \textbf{#1:} \\
+    \hspace{2pt}\textit{Fluent with}{: #2} \\
+    \hspace{2pt}\textit{Intermediate}{: #3} \\
+    \hspace{2pt}\textit{Familiar with}{: #4} \\
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Boris Daniel Martinez Millán} \\ \vspace{2pt}
+    \small +52 (999) 134 2598
+    $|$ \href{mailto:x93bd0@gmail.com}{\underline{x93bd0@gmail.com}}
+    $|$ \href{https://github.com/x93bd0/}{\underline{https://github.com/x93bd0}}
+\end{center}
+
+\section{Experience}
+    \resumeSubHeadingListStart
+
+    % ----- Competitive Programming ----- %
+    \resumeSubheading
+        {Competitive Programmer}{2022 -- Present}
+        {Achievements:}{}
+
+        \resumeItemListStart
+            \resumeItem{
+                Won Gold and Silver medals in the \emph{Mexican Olympiad in Informatics (OMI)}, in its 2025 and 2024 editions, respectively.
+                \href{https://www.olimpiadadeinformatica.org.mx/Resultados/Olimpiada/Resultados?clave=30}{(OMI2025)}
+                \href{https://www.olimpiadadeinformatica.org.mx/Resultados/Olimpiada/Resultados?clave=29}{(OMI2024)}
+            }
+            \resumeItem{
+                Member of the Growth and Competition categories of the \emph{Training and Selection Process (PES)}, which is a continuation of the Mexican Olympiad in Informatics, in its 2025 and 2024 editions, respectively.
+            }
+            \resumeItem{
+                \href{https://www.iberoinformatica.org/contestant_details/8624}{Silver medal} in the \emph{Ibero-American Olympiad in Informatics (OII)} in its 2025 edition.
+                \href{https://www.iberoinformatica.org/results/2025/all}{(OII 2025)}
+            }
+            \resumeItem{
+                Member of two guest teams (\emph{S3D4N} and \emph{single-threaded}, respectively) that participated in the \emph{ICPC Gran Premio de México} competition due to their participation in the \emph{Mexican Olympiad in Informatics}.
+            }
+            \resumeItem{
+                Member of the \emph{National Pre-selection (PSN)} of the \emph{Cuban Olympiad in Informatics (OCI)} in its 2023 edition.
+            }
+            \resumeItem{
+                Top \#30 in the \href{https://github.com/x93bd0/tsc5}{\emph{Ton Smart Challenge \#5 (TSC5)}} and Top \#50 in the \href{https://codeforces.com/contest/2105/standings}{\emph{Tact Smart Battle \#1}}
+            }
+            \resumeItem{
+                Ranked \href{https://codeforces.com/profile/x93bd0}{"pupil"} with more than 330 problems solved in Codeforces.
+            }
+            \resumeItem{
+                More than 160 problems solved in \href{https://leetcode.com/u/x93bd0/}{LeetCode}.
+            }
+            \resumeItem{
+                Significant use of \href{https://cses.fi/}{CSES} and \href{https://dmoj.uclv.edu.cu/user/x93bd}{DMOJ (UCLV)}.
+            }
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\section{Technical Abilities}
+    \small
+    \hspace{8pt}
+    \begin{tabular}{l | l | l | l}
+        & Programming Languages
+        & Technologies
+        & Frameworks
+        \\ \hline
+
+        Proficient with
+        & C/C++, Python, SQL
+        & GNU/Linux, PostgreSQL
+        &
+        \\ \hline
+
+        Intermediate
+        & JavaScript, Rust
+        & Android, Docker, Git, LaTeX, Podman, Zabbix
+        &
+        \\ \hline
+
+        Familiar with
+        & TypeScript, Java, Lua, Tact, FunC
+        & GitHub Actions, RabbitMQ
+        & Astro
+    \end{tabular}
+
+\section{Languages}
+    \hspace{8pt}
+    \small{\begin{tabular}{l l}
+        Spanish & (Native) \\
+        English & (Proficient) \\
+    \end{tabular}}
+
+\vspace*{\fill}
+\begin{center}
+  Updated April 2026 \\
+  \href{https://raw.githubusercontent.com/x93bd0/resume/main/en/resume.pdf}{\underline{Latest Version}}
+\end{center}
+
+\end{document}
